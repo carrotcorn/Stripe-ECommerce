@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Home from "./Home/Home"
 // import Hero from './Hero/Hero';
 // import About from './About/About';
 // import Projects from './Projects/Projects';
 // import Contact from './Contact/Contact';
 // import Footer from './Footer/Footer';
 
-import { StoreProvider } from '../context/context';
+import { StoreProvider } from '../context';
 
 // import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 import { homeData } from '../mock/data';

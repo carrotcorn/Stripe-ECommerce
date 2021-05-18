@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "stripeGatsby",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Eric Bourne",
   "dependencies": {
     "bootstrap": "^5.0.1",
     "gatsby": "^3.4.1",
