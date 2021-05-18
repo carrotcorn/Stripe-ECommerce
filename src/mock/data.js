@@ -12,5 +12,6 @@ export const headData = {
 //HOME DATA
 export const homeData = {
   storeName: "Sea To Sky Cycles",
-  headerOne: "Sale Items",
+  headerOne: "Your Local Bike Shop Online!",
+  headerTwo: "Sale Items",
 }

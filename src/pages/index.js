@@ -1,28 +1,23 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import App from '../components/App';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+export default () => {
+  const { title, lang, description, ogImg } = headData;
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Your Local Bike Shop Online!</h1>
-    <h2>Sale Items</h2>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
+        {/* <meta name="image" property="og:image" content={ogImg} /> */}
+      </Helmet>
+      <App />
+    </>
+  );
+};
